@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        Data In Firebase db
+    </head>
+    <body>
+        <table border="1">
+            <tr><th>Playlist</th><th>Song_added</th><th>Song_added_by</th><th>Song_artist</th></tr>
+
+            {% for song in all_songs %}
+            <tr>
+                    <td>
+                        {{song.val().playlist_added_to}}
+                    </td>
+                    <td>
+                        {{song.val().song_added}}
+                    </td>
+                    <td>
+                        {{song.val().song_added_by}}
+                    </td>
+                    <td>
+                        {{song.val().song_artist}}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
