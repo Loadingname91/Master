@@ -12,6 +12,7 @@ My Spotify tigger TFTTT is as follows:
 Similary we can design many other web hooks integration to firebase
 
     DESIGN:
+
                                 |IFTTT| ->>>> |FLASK| ->>>> |FIRE BASE|
 
 Ps: the front design is a simple one , I was going for the logic implementation :p
